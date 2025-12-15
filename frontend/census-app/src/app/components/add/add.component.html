@@ -1,0 +1,46 @@
+<form (ngSubmit)="submit()">
+
+  <input
+    type="number"
+    placeholder="Number of People"
+    [(ngModel)]="form.numPeople"
+    name="numPeople">
+
+  <input
+    type="text"
+    placeholder="Street"
+    [(ngModel)]="form.street"
+    name="street">
+
+  <input
+    type="text"
+    placeholder="City"
+    [(ngModel)]="form.city"
+    name="city">
+
+  <input
+    type="text"
+    placeholder="State"
+    [(ngModel)]="form.state"
+    name="state">
+
+  <input
+    type="text"
+    placeholder="Zip Code"
+    [(ngModel)]="form.zip"
+    name="zip">
+
+  <input
+    type="number"
+    placeholder="Year of Census"
+    [(ngModel)]="form.year"
+    name="year">
+
+  <input
+    type="text"
+    placeholder="Census Taker Name"
+    [(ngModel)]="form.censusTaker"
+    name="censusTaker">
+
+  <button type="submit">Add Census</button>
+</form>

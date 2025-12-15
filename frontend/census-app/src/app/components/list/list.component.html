@@ -1,0 +1,26 @@
+<table border="1">
+  <tr>
+    <th>Year</th>
+    <th>Census Taker</th>
+    <th>People</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr *ngFor="let census of censusRecords">
+    <td>{{ census.year }}</td>
+    <td>{{ census.censusTaker }}</td>
+    <td>{{ census.numPeople }}</td>
+    <td>{{ census.state }}</td>
+    <td>{{ census.city }}</td>
+    <td>
+      <button [routerLink]="['/update', census._id]">Update</button>
+      <button (click)="delete(census._id)">Delete</button>
+    </td>
+  </tr>
+</table>
+
+
+
+
